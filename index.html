@@ -1,0 +1,42 @@
+```html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QSell Leads Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>QSell - Zarządzanie Leadami</h1>
+    <button id="addLeadBtn">Dodaj Leada</button>
+  </header>
+  <main id="columns">
+    <div class="column" data-status="nowy"><h2>Nowy</h2></div>
+    <div class="column" data-status="w-toku"><h2>W toku</h2></div>
+    <div class="column" data-status="zakonczony"><h2>Zakończony</h2></div>
+  </main>
+
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <h3>Dodaj nowego leada</h3>
+      <input type="text" id="leadName" placeholder="Nazwa klienta" />
+      <input type="email" id="leadEmail" placeholder="Email" />
+      <input type="tel" id="leadPhone" placeholder="Numer telefonu" />
+      <input type="number" id="leadValue" placeholder="Wartość potencjalna" />
+      <input type="number" id="leadProbability" placeholder="Prawdopodobieństwo (%)" />
+      <select id="leadPriority">
+        <option value="Niski">Niski</option>
+        <option value="Średni">Średni</option>
+        <option value="Wysoki">Wysoki</option>
+      </select>
+      <button id="saveLeadBtn">Zapisz</button>
+      <button id="cancelLeadBtn">Anuluj</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
